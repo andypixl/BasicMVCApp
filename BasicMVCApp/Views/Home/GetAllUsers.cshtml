@@ -1,0 +1,34 @@
+﻿@model List<User>
+
+<p>
+    <a asp-action="AddUser">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Username
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                <form asp-action="GetUserDetails" method="get">
+                    <input type="hidden" name="id" value="@item.Id"></input>
+                    <button type="submit">Details</button>
+                </form> |
+                <form asp-action="DeleteUser" method="post">
+                    <input type="hidden" name="id" value="@item.Id"></input>
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
