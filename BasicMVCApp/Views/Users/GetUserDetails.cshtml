@@ -28,7 +28,7 @@
                         @Html.DisplayFor(modelItem => item.Type)
                     </td>
                     <td>
-                        <form asp-action="DeleteItem" method="post">
+                        <form asp-controller="Items" asp-action="DeleteItemForUser" method="post">
                             <input type="hidden" name="userId" value="@Model.Id"></input>
                             <input type="hidden" name="itemId" value="@item.Id"></input>
                             <button type="submit">Delete</button>
@@ -40,14 +40,13 @@
     </table>
     <hr>
     Add Item
-    <form asp-action="AddItemToUser" method="post">
+    <form asp-controller="Items" asp-action="AddItemToUser" method="post">
         <input type="hidden" name="id" value="@Model.Id"></input>
         Type:
-        <input name="type"></input>
+        <input name="Item.Type"></input>
         <button type="submit">Add</button>
     </form>
 </div>
-
 <div>
     <a asp-action="GetAllUsers">Back to list</a>
 </div>
