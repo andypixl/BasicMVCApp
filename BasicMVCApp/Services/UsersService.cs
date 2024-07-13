@@ -1,7 +1,7 @@
-﻿using BasicMVCApp.Models;
-using BasicMVCApp.Repositories;
+﻿using BasicMinimalApi.Models;
+using BasicMinimalApi.Repositories;
 
-namespace BasicMVCApp.Services
+namespace BasicMinimalApi.Services
 {
     public class UsersService(IUsersRepository usersRepository) : IUsersService
     {

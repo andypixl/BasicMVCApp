@@ -1,8 +1,8 @@
-﻿using BasicMVCApp.Models;
-using BasicMVCApp.Services;
+﻿using BasicMinimalApi.Models;
+using BasicMinimalApi.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace BasicMVCApp.Repositories
+namespace BasicMinimalApi.Repositories
 {
     public class ItemsRepository(ApplicationDbContext context, IUsersRepository usersRepository) : IItemsRepository
     {

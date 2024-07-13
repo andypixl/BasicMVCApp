@@ -1,6 +1,6 @@
-﻿using BasicMVCApp.Models;
+﻿using BasicMinimalApi.Models;
 
-namespace BasicMVCApp.Repositories
+namespace BasicMinimalApi.Repositories
 {
     public interface IUsersRepository
     {

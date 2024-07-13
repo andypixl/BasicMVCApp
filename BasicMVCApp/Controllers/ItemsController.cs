@@ -1,8 +1,8 @@
-﻿using BasicMVCApp.Models;
-using BasicMVCApp.Services;
+﻿using BasicMinimalApi.Models;
+using BasicMinimalApi.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BasicMVCApp.Controllers
+namespace BasicMinimalApi.Controllers
 {
     public class ItemsController(IItemsService itemsService) : Controller
     {

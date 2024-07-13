@@ -1,5 +1,5 @@
-using BasicMVCApp.Repositories;
-using BasicMVCApp.Services;
+using BasicMinimalApi.Repositories;
+using BasicMinimalApi.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

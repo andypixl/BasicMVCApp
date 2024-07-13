@@ -1,6 +1,6 @@
-﻿using BasicMVCApp.Models;
+﻿using BasicMinimalApi.Models;
 
-namespace BasicMVCApp.Services
+namespace BasicMinimalApi.Services
 {
     public interface IUsersService
     {

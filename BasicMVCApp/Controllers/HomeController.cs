@@ -1,8 +1,8 @@
-using BasicMVCApp.Models;
+using BasicMinimalApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BasicMVCApp.Controllers
+namespace BasicMinimalApi.Controllers
 {
     public class HomeController(ILogger<HomeController> logger) : Controller
     {

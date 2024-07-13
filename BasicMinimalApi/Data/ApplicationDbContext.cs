@@ -1,7 +1,7 @@
 ﻿using BasicMinimalApi.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace BasicMinimalApi.Services
+namespace BasicMinimalApi.Data
 {
     public class ApplicationDbContext(DbContextOptions options) : DbContext(options)
     {

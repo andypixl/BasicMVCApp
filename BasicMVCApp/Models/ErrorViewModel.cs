@@ -1,4 +1,4 @@
-namespace BasicMVCApp.Models
+namespace BasicMinimalApi.Models
 {
     public class ErrorViewModel
     {
